@@ -8,9 +8,13 @@
 
 ## 演示
 
-|成功动画：seed=44|失败动画：seed=42|
-|-|-|
-|!\[成功回合](media/act\_pusht\_success\_seed44.gif)|!\[失败回合](media/act\_pusht\_failure\_seed42.gif)|
+### 成功案例（seed=44）
+
+![成功案例](media/act_pusht_success_seed44.gif)
+
+### 失败案例（seed=42）
+
+![失败案例](media/act_pusht_failure_seed42.gif)
 
 两份 GIF 文件对应分别进行的单回合评测，模型、执行间隔相同。两份 GIF 已从原始 MP4 重新导出：成功案例 245 帧、24.5 秒；失败案例 300 帧、30 秒。成功标记分别为 100% 与 0%，不是根据肉眼相似程度推断。这是挑选的案例；总体结果请看 50 回合评测。
 
