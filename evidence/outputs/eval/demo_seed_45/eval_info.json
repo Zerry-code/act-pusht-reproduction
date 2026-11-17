@@ -1,0 +1,44 @@
+{
+  "per_task": [
+    {
+      "task_group": "pusht",
+      "task_id": 0,
+      "metrics": {
+        "sum_rewards": [
+          138.14135807253487
+        ],
+        "max_rewards": [
+          0.9137944477396839
+        ],
+        "successes": [
+          false
+        ],
+        "video_paths": [
+          "outputs/eval/demo_seed_45/videos/pusht_0/eval_episode_0.mp4"
+        ]
+      }
+    }
+  ],
+  "per_group": {
+    "pusht": {
+      "avg_sum_reward": 138.14135807253487,
+      "avg_max_reward": 0.9137944477396839,
+      "pc_success": 0.0,
+      "n_episodes": 1,
+      "video_paths": [
+        "outputs/eval/demo_seed_45/videos/pusht_0/eval_episode_0.mp4"
+      ]
+    }
+  },
+  "overall": {
+    "avg_sum_reward": 138.14135807253487,
+    "avg_max_reward": 0.9137944477396839,
+    "pc_success": 0.0,
+    "n_episodes": 1,
+    "eval_s": 2.6441493034362793,
+    "eval_ep_s": 2.6441495418548584,
+    "video_paths": [
+      "outputs/eval/demo_seed_45/videos/pusht_0/eval_episode_0.mp4"
+    ]
+  }
+}

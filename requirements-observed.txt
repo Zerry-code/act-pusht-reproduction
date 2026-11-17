@@ -1,0 +1,8 @@
+# Observed / explicitly installed versions, not a complete lockfile.
+# Install CUDA PyTorch via README first; always use video_backend=pyav.
+lerobot==0.4.4
+torch==2.6.0+cu124
+torchvision==0.21.0
+torchcodec==0.2.1
+datasets==4.8.5
+fsspec==2026.2.0

@@ -1,0 +1,97 @@
+{
+  "provenance": "Transcribed from user-provided run logs; not rerun by the assistant. Raw evidence must be collected on the original machine.",
+  "experiments": [
+    {
+      "training_steps": 200,
+      "n_action_steps": 100,
+      "n_episodes": 5,
+      "seed": 42,
+      "avg_sum_reward": 11.256742282198298,
+      "avg_max_reward": 0.09673766005799252,
+      "pc_success": 0.0,
+      "n_success": 0,
+      "eval_directory": "act_pusht_smoke"
+    },
+    {
+      "training_steps": 10000,
+      "n_action_steps": 100,
+      "n_episodes": 5,
+      "seed": 42,
+      "avg_sum_reward": 26.23302228699918,
+      "avg_max_reward": 0.34701866753627436,
+      "pc_success": 0.0,
+      "n_success": 0,
+      "eval_directory": "act_pusht_10k"
+    },
+    {
+      "training_steps": 10000,
+      "n_action_steps": 10,
+      "n_episodes": 5,
+      "seed": 42,
+      "avg_sum_reward": 25.75604337560562,
+      "avg_max_reward": 0.3980074771815533,
+      "pc_success": 0.0,
+      "n_success": 0,
+      "eval_directory": "act_pusht_10k_action10"
+    },
+    {
+      "training_steps": 50000,
+      "n_action_steps": 10,
+      "n_episodes": 5,
+      "seed": 42,
+      "avg_sum_reward": 142.10238851644039,
+      "avg_max_reward": 0.8905015257955778,
+      "pc_success": 40.0,
+      "n_success": 2,
+      "eval_directory": "act_pusht_50k_action10"
+    },
+    {
+      "training_steps": 50000,
+      "n_action_steps": 10,
+      "n_episodes": 50,
+      "seed": 42,
+      "avg_sum_reward": 88.6319533618311,
+      "avg_max_reward": 0.6349801816189458,
+      "pc_success": 22.0,
+      "n_success": 11,
+      "eval_directory": "act_pusht_50k_action10_n50"
+    }
+  ],
+  "single_episode_demos": [
+    {
+      "seed": 42,
+      "n_episodes": 1,
+      "pc_success": 0.0,
+      "training_steps": 50000,
+      "n_action_steps": 10
+    },
+    {
+      "seed": 43,
+      "n_episodes": 1,
+      "pc_success": 0.0,
+      "training_steps": 50000,
+      "n_action_steps": 10
+    },
+    {
+      "seed": 44,
+      "n_episodes": 1,
+      "pc_success": 100.0,
+      "training_steps": 50000,
+      "n_action_steps": 10
+    },
+    {
+      "seed": 45,
+      "n_episodes": 1,
+      "pc_success": 0.0,
+      "training_steps": 50000,
+      "n_action_steps": 10
+    },
+    {
+      "seed": 46,
+      "n_episodes": 1,
+      "pc_success": 0.0,
+      "training_steps": 50000,
+      "n_action_steps": 10
+    }
+  ]
+}
