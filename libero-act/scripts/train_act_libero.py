@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import DataLoader
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
-#读取固定名单，只选择训练示范
+#----------读取固定名单，只选择训练示范
 with open("libero_task34_split.json", encoding="utf-8") as file:
     selection = json.load(file)
 
