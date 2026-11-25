@@ -3,6 +3,7 @@ import torch
 from torch.utils.data import DataLoader
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
+#读取固定名单，只选择训练示范
 with open("libero_task34_split.json", encoding="utf-8") as file:
     selection = json.load(file)
 
@@ -16,6 +17,7 @@ fps = 10.0
 
 print("开始加载 36 条训练示范……", flush=True)
 
+#创建数据集和 DataLoader，组织动作块、组成 batch
 train_dataset = LeRobotDataset(
     selection["repo_id"],
     revision=selection["revision"],
@@ -32,8 +34,10 @@ loader = DataLoader(
     train_dataset,
     batch_size=2,
     shuffle=True,
+#shuffle=True 会改变下一轮样本的取样顺序，不会打乱动作块内部的时间顺序。
     num_workers=0,
 )
+#---------------------------
 
 batch = next(iter(loader))
 
@@ -71,6 +75,7 @@ input_features["observation.state"] = PolicyFeature(
     type=FeatureType.STATE, shape=(8,)
 )
 
+#配置 ACT 的输入、输出和预测长度
 config = ACTConfig(
     input_features=input_features,
     output_features={
@@ -82,6 +87,7 @@ config = ACTConfig(
 )
 
 # 2. 使用训练集统计量和固定的图像统计量
+#加载训练集统计量，创建预处理器
 with open("libero_task34_train_stats.json", encoding="utf-8") as file:
     stats_data = json.load(file)
 
@@ -102,6 +108,7 @@ stats = {
 # 3. 创建模型与配套处理器
 policy = ACTPolicy(config).to(config.device)
 
+#加载训练集统计量，创建预处理器
 preprocessor, postprocessor = make_pre_post_processors(
     config,
     dataset_stats=stats,
@@ -112,6 +119,9 @@ prepared_batch = preprocessor(batch)
 policy.train()
 with torch.no_grad():
     loss, loss_terms = policy.forward(prepared_batch)
+#policy.forward(...)：计算预测与损失；这行调用 ACT，返回：
+#loss        用于反向传播的总损失
+#loss_terms  动作误差、KL 损失等记录
 
 print("训练脚本中的 ACT 前向计算成功")
 print("当前批次损失：", loss.item())
@@ -146,21 +156,36 @@ running_loss = 0.0
 
 print(f"开始训练，共 {steps} 次更新……", flush=True)
 
+#-----------------------（重点）循环取样、计算损失、更新参数
 for step in range(1, steps + 1):
     try:
         raw_batch = next(iterator)
+#next(iterator)：拿下一批教材
+#这里通常取出两份样本。每份包含：
+#起点图像：主相机＋腕部相机
+#起点状态：8 个数
+#参考答案：从起点开始的 50 个七维动作
+#填充标记：哪些参考动作有效
     except StopIteration:
+#StopIteration 表示这一轮数据取完了。代码重新开始取数据，但没有重新创建模型，因此之前学到的参数保留着。
         iterator = iter(loader)
         raw_batch = next(iterator)
 
     training_batch = preprocessor(raw_batch)
+#preprocessor(raw_batch)：把数据转成模型使用的尺度，输入数据仍表达同一件事，只是完成了归一化、设备转换等处理
 
     optimizer.zero_grad(set_to_none=True)
+#先清空之前的梯度。默认情况下，新计算的梯度会累积，不能每批都不清理。
     loss, loss_terms = policy.forward(training_batch)
+#shuffle=True 会改变下一轮样本的取样顺序，不会打乱动作块内部的时间顺序。
     loss.backward()
+#计算当前损失对各个可训练参数的梯度，此时还没执行优化器更新。
 
     torch.nn.utils.clip_grad_norm_(policy.parameters(), max_norm=1.0)
+#clip_grad_norm_(...)限制梯度整体大小，避免一次更新过猛。它不代表“每个权重最多变化 1”。
     optimizer.step()
+#AdamW 根据梯度、学习率和自身保存的历史状态，实际调整参数。
+#-------------------------------------------
 
     if step % 2000 == 0:
         checkpoint = run_dir / "checkpoints" / f"step_{step:06d}"
