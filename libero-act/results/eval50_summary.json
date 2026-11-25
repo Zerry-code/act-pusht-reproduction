@@ -1,0 +1,16 @@
+{
+  "model": "ACT",
+  "training_steps": 10000,
+  "suite": "libero_spatial",
+  "simulation_task_id": 0,
+  "dataset_task_index": 34,
+  "evaluation_seed": 42,
+  "successful_episodes": 48,
+  "total_episodes": 50,
+  "success_rate_percent": 96.0,
+  "failed_episode_indices": [
+    39,
+    46
+  ],
+  "source_result": "outputs/eval/act_task34_10k_eval50_20261125_191156/eval_info.json"
+}

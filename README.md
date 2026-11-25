@@ -161,3 +161,8 @@ bash \~/projects/act-pusht-reproduction/scripts/collect\_local.sh
 
 上游代码、数据集和算法归原作者所有；使用时查看相应许可证。本仓库不包含官方代码副本。
 
+
+
+## LIBERO ACT 实验
+
+[LIBERO 单任务 ACT 训练与评测](libero-act/README.md)：36 条训练示范、10k 次更新，单任务评测成功 48/50 回合（96%）。

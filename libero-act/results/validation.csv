@@ -1,0 +1,3 @@
+model,validation_episodes,validation_frames,normalized_first_action_mae,model_path
+100_steps,9,914,0.7788871857999973,outputs/train/act_libero_task34_smoke_20261125_175530/pretrained_model
+10000_steps,9,914,0.4596158970367465,outputs/train/act_libero_task34_10k_20261125_181140/pretrained_model
