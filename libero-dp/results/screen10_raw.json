@@ -1,0 +1,98 @@
+{
+  "config": {
+    "model": "outputs/train/dp_task34_grasp_20261126/step_004000/pretrained_model",
+    "output": "outputs/eval/dp_task34_grasp_screen_20261126",
+    "episodes": 10,
+    "start": 0,
+    "seed": 42,
+    "batch_size": 1
+  },
+  "episodes": [
+    {
+      "init_state_id": 0,
+      "seed": 42,
+      "success": true,
+      "steps": 79,
+      "gripper_positive_steps": 40,
+      "gripper_sign_changes": 3
+    },
+    {
+      "init_state_id": 1,
+      "seed": 43,
+      "success": true,
+      "steps": 77,
+      "gripper_positive_steps": 40,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 2,
+      "seed": 44,
+      "success": true,
+      "steps": 87,
+      "gripper_positive_steps": 47,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 3,
+      "seed": 45,
+      "success": true,
+      "steps": 73,
+      "gripper_positive_steps": 34,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 4,
+      "seed": 46,
+      "success": true,
+      "steps": 76,
+      "gripper_positive_steps": 41,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 5,
+      "seed": 47,
+      "success": true,
+      "steps": 74,
+      "gripper_positive_steps": 38,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 6,
+      "seed": 48,
+      "success": true,
+      "steps": 75,
+      "gripper_positive_steps": 36,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 7,
+      "seed": 49,
+      "success": true,
+      "steps": 131,
+      "gripper_positive_steps": 39,
+      "gripper_sign_changes": 4
+    },
+    {
+      "init_state_id": 8,
+      "seed": 50,
+      "success": true,
+      "steps": 171,
+      "gripper_positive_steps": 44,
+      "gripper_sign_changes": 2
+    },
+    {
+      "init_state_id": 9,
+      "seed": 51,
+      "success": true,
+      "steps": 81,
+      "gripper_positive_steps": 38,
+      "gripper_sign_changes": 3
+    }
+  ],
+  "overall": {
+    "successes": 10,
+    "n_episodes": 10,
+    "pc_success": 100.0,
+    "eval_s": 179.17018900400035
+  }
+}

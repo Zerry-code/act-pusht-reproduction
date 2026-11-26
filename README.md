@@ -166,3 +166,7 @@ bash \~/projects/act-pusht-reproduction/scripts/collect\_local.sh
 ## LIBERO ACT 实验
 
 [LIBERO 单任务 ACT 训练与评测](libero-act/README.md)：36 条训练示范、10k 次更新，单任务评测成功 48/50 回合（96%）。
+
+## LIBERO Diffusion Policy 实验与排查记录
+
+[LIBERO 单任务 DP 实验](libero-dp/README.md)：最终组合配置成功42/50（84%），其中未参与筛选的初始状态成功33/40。[完整排查推导](libero-dp/docs/DEBUGGING.md)记录失败现象、假设、控制变量检查、无收益尝试、最终改动及结论边界，并附原始逐回合JSON和指标核验脚本。

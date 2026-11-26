@@ -1,0 +1,20 @@
+{
+  "source_archive": "dp_closeout_review.zip",
+  "files": {
+    "eval_dp_libero_grasp.py": "scripts/eval_dp_libero_grasp.py",
+    "train_dp_libero_grasp.py": "scripts/train_dp_libero_grasp.py",
+    "validate_dp_libero_grasp.py": "scripts/validate_dp_libero_grasp.py",
+    "libero_task34_split.json": "config/libero_task34_split.json",
+    "outputs/train/dp_task34_grasp_20261126/run.json": "config/train_run.json",
+    "outputs/train/dp_task34_grasp_20261126/step_004000/pretrained_model/config.json": "config/final_policy_config.json",
+    "outputs/eval/dp_task34_matched_baseline_20261126/eval_info.json": "results/baseline50_raw.json",
+    "outputs/eval/dp_task34_grasp_screen_20261126/eval_info.json": "results/screen10_raw.json",
+    "outputs/eval/dp_task34_grasp_confirm_20261126/eval_info.json": "results/confirm50_raw.json",
+    "results/dp_task34_grasp_validation_20261126.json": "results/validation_raw.json",
+    "results/dp_task34_grasp_data_audit_20261126.json": "results/data_audit_raw.json"
+  },
+  "notes": [
+    "原始脚本、JSON和配置按原字节复制，没有重跑模型。",
+    "历史排查诊断值见 DEBUGGING.md，其来源与原始 JSON 分开说明。"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "train": {
+    "episode_ids": [
+      1272,
+      1275,
+      1282,
+      1300,
+      1327,
+      1352,
+      1368,
+      1379,
+      1382,
+      1395,
+      1410,
+      1449,
+      1450,
+      1491,
+      1493,
+      1500,
+      1504,
+      1506,
+      1517,
+      1527,
+      1532,
+      1560,
+      1563,
+      1567,
+      1568,
+      1574,
+      1579,
+      1589,
+      1597,
+      1602,
+      1615,
+      1617,
+      1660,
+      1669,
+      1672,
+      1679
+    ],
+    "task_id": 34,
+    "frames": 3573,
+    "gripper_labels_counts": {
+      "-1.0": 1849,
+      "1.0": 1724
+    },
+    "median_gripper_sign_changes_per_100_frames": 2.1622253389434314,
+    "padding_by_horizon": {
+      "48": {
+        "window_fraction": 0.473551637279597,
+        "action_position_fraction": 0.2367758186397985
+      },
+      "16": {
+        "window_fraction": 0.15113350125944586,
+        "action_position_fraction": 0.07556675062972293
+      }
+    }
+  },
+  "val": {
+    "episode_ids": [
+      1273,
+      1330,
+      1344,
+      1347,
+      1397,
+      1401,
+      1425,
+      1583,
+      1642
+    ],
+    "task_id": 34,
+    "frames": 914,
+    "gripper_labels_counts": {
+      "-1.0": 476,
+      "1.0": 438
+    },
+    "median_gripper_sign_changes_per_100_frames": 2.247191011235955,
+    "padding_by_horizon": {
+      "48": {
+        "window_fraction": 0.462800875273523,
+        "action_position_fraction": 0.2314004376367615
+      },
+      "16": {
+        "window_fraction": 0.14770240700218817,
+        "action_position_fraction": 0.07385120350109409
+      }
+    }
+  }
+}

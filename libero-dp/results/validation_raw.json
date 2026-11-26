@@ -1,0 +1,52 @@
+{
+  "seed": 137,
+  "val_episodes": [
+    1273,
+    1330,
+    1344,
+    1347,
+    1397,
+    1401,
+    1425,
+    1583,
+    1642
+  ],
+  "models": {
+    "outputs/train/dp_libero_task34_minmax_10k_20261125_225332/pretrained_model": {
+      "frames": 914,
+      "first_action_mae": 0.2467522919178009,
+      "per_dimension_mae": [
+        0.3828309178352356,
+        0.18147125840187073,
+        0.4307374060153961,
+        0.04751761630177498,
+        0.08340305835008621,
+        0.054360561072826385,
+        0.546945333480835
+      ],
+      "gripper_sign_accuracy": 0.7439824938774109,
+      "gripper_close_recall": 0.6598173379898071,
+      "gripper_open_recall": 0.8214285969734192,
+      "frames_before_switch": 90,
+      "gripper_sign_accuracy_before_switch": 0.4888888895511627
+    },
+    "outputs/train/dp_task34_grasp_20261126/step_004000/pretrained_model": {
+      "frames": 914,
+      "first_action_mae": 0.10693994909524918,
+      "per_dimension_mae": [
+        0.17038430273532867,
+        0.1033349260687828,
+        0.1977432668209076,
+        0.030133860185742378,
+        0.04982082173228264,
+        0.028233982622623444,
+        0.16892839968204498
+      ],
+      "gripper_sign_accuracy": 0.920131266117096,
+      "gripper_close_recall": 0.9543378949165344,
+      "gripper_open_recall": 0.8886554837226868,
+      "frames_before_switch": 90,
+      "gripper_sign_accuracy_before_switch": 0.6777777671813965
+    }
+  }
+}

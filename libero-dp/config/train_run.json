@@ -1,0 +1,7 @@
+{
+  "output": "outputs/train/dp_task34_grasp_20261126",
+  "steps": 4000,
+  "screen_step": 2000,
+  "batch_size": 8,
+  "seed": 42
+}

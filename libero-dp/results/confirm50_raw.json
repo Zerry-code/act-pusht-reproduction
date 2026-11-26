@@ -1,0 +1,418 @@
+{
+  "config": {
+    "model": "outputs/train/dp_task34_grasp_20261126/step_004000/pretrained_model",
+    "output": "outputs/eval/dp_task34_grasp_confirm_20261126",
+    "episodes": 50,
+    "start": 0,
+    "seed": 1042,
+    "batch_size": 1
+  },
+  "episodes": [
+    {
+      "init_state_id": 0,
+      "seed": 1042,
+      "success": true,
+      "steps": 71,
+      "gripper_positive_steps": 33,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 1,
+      "seed": 1043,
+      "success": true,
+      "steps": 79,
+      "gripper_positive_steps": 40,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 2,
+      "seed": 1044,
+      "success": true,
+      "steps": 80,
+      "gripper_positive_steps": 45,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 3,
+      "seed": 1045,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 161,
+      "gripper_sign_changes": 17
+    },
+    {
+      "init_state_id": 4,
+      "seed": 1046,
+      "success": true,
+      "steps": 79,
+      "gripper_positive_steps": 44,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 5,
+      "seed": 1047,
+      "success": true,
+      "steps": 81,
+      "gripper_positive_steps": 41,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 6,
+      "seed": 1048,
+      "success": true,
+      "steps": 75,
+      "gripper_positive_steps": 37,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 7,
+      "seed": 1049,
+      "success": true,
+      "steps": 76,
+      "gripper_positive_steps": 36,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 8,
+      "seed": 1050,
+      "success": true,
+      "steps": 107,
+      "gripper_positive_steps": 50,
+      "gripper_sign_changes": 2
+    },
+    {
+      "init_state_id": 9,
+      "seed": 1051,
+      "success": true,
+      "steps": 81,
+      "gripper_positive_steps": 41,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 10,
+      "seed": 1052,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 179,
+      "gripper_sign_changes": 9
+    },
+    {
+      "init_state_id": 11,
+      "seed": 1053,
+      "success": true,
+      "steps": 70,
+      "gripper_positive_steps": 34,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 12,
+      "seed": 1054,
+      "success": true,
+      "steps": 85,
+      "gripper_positive_steps": 46,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 13,
+      "seed": 1055,
+      "success": true,
+      "steps": 82,
+      "gripper_positive_steps": 42,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 14,
+      "seed": 1056,
+      "success": true,
+      "steps": 85,
+      "gripper_positive_steps": 47,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 15,
+      "seed": 1057,
+      "success": true,
+      "steps": 75,
+      "gripper_positive_steps": 39,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 16,
+      "seed": 1058,
+      "success": true,
+      "steps": 73,
+      "gripper_positive_steps": 38,
+      "gripper_sign_changes": 3
+    },
+    {
+      "init_state_id": 17,
+      "seed": 1059,
+      "success": true,
+      "steps": 71,
+      "gripper_positive_steps": 38,
+      "gripper_sign_changes": 3
+    },
+    {
+      "init_state_id": 18,
+      "seed": 1060,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 182,
+      "gripper_sign_changes": 12
+    },
+    {
+      "init_state_id": 19,
+      "seed": 1061,
+      "success": true,
+      "steps": 77,
+      "gripper_positive_steps": 41,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 20,
+      "seed": 1062,
+      "success": true,
+      "steps": 81,
+      "gripper_positive_steps": 42,
+      "gripper_sign_changes": 3
+    },
+    {
+      "init_state_id": 21,
+      "seed": 1063,
+      "success": true,
+      "steps": 112,
+      "gripper_positive_steps": 26,
+      "gripper_sign_changes": 2
+    },
+    {
+      "init_state_id": 22,
+      "seed": 1064,
+      "success": true,
+      "steps": 81,
+      "gripper_positive_steps": 43,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 23,
+      "seed": 1065,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 43,
+      "gripper_sign_changes": 4
+    },
+    {
+      "init_state_id": 24,
+      "seed": 1066,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 98,
+      "gripper_sign_changes": 15
+    },
+    {
+      "init_state_id": 25,
+      "seed": 1067,
+      "success": true,
+      "steps": 74,
+      "gripper_positive_steps": 38,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 26,
+      "seed": 1068,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 218,
+      "gripper_sign_changes": 13
+    },
+    {
+      "init_state_id": 27,
+      "seed": 1069,
+      "success": true,
+      "steps": 78,
+      "gripper_positive_steps": 39,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 28,
+      "seed": 1070,
+      "success": true,
+      "steps": 77,
+      "gripper_positive_steps": 41,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 29,
+      "seed": 1071,
+      "success": true,
+      "steps": 74,
+      "gripper_positive_steps": 40,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 30,
+      "seed": 1072,
+      "success": true,
+      "steps": 78,
+      "gripper_positive_steps": 39,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 31,
+      "seed": 1073,
+      "success": true,
+      "steps": 77,
+      "gripper_positive_steps": 43,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 32,
+      "seed": 1074,
+      "success": true,
+      "steps": 87,
+      "gripper_positive_steps": 49,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 33,
+      "seed": 1075,
+      "success": true,
+      "steps": 80,
+      "gripper_positive_steps": 41,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 34,
+      "seed": 1076,
+      "success": true,
+      "steps": 68,
+      "gripper_positive_steps": 29,
+      "gripper_sign_changes": 4
+    },
+    {
+      "init_state_id": 35,
+      "seed": 1077,
+      "success": true,
+      "steps": 77,
+      "gripper_positive_steps": 38,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 36,
+      "seed": 1078,
+      "success": true,
+      "steps": 79,
+      "gripper_positive_steps": 41,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 37,
+      "seed": 1079,
+      "success": true,
+      "steps": 67,
+      "gripper_positive_steps": 31,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 38,
+      "seed": 1080,
+      "success": true,
+      "steps": 71,
+      "gripper_positive_steps": 35,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 39,
+      "seed": 1081,
+      "success": true,
+      "steps": 80,
+      "gripper_positive_steps": 44,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 40,
+      "seed": 1082,
+      "success": true,
+      "steps": 70,
+      "gripper_positive_steps": 34,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 41,
+      "seed": 1083,
+      "success": true,
+      "steps": 68,
+      "gripper_positive_steps": 34,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 42,
+      "seed": 1084,
+      "success": true,
+      "steps": 75,
+      "gripper_positive_steps": 38,
+      "gripper_sign_changes": 3
+    },
+    {
+      "init_state_id": 43,
+      "seed": 1085,
+      "success": true,
+      "steps": 74,
+      "gripper_positive_steps": 40,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 44,
+      "seed": 1086,
+      "success": true,
+      "steps": 74,
+      "gripper_positive_steps": 37,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 45,
+      "seed": 1087,
+      "success": true,
+      "steps": 76,
+      "gripper_positive_steps": 37,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 46,
+      "seed": 1088,
+      "success": true,
+      "steps": 81,
+      "gripper_positive_steps": 43,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 47,
+      "seed": 1089,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 82,
+      "gripper_sign_changes": 6
+    },
+    {
+      "init_state_id": 48,
+      "seed": 1090,
+      "success": true,
+      "steps": 76,
+      "gripper_positive_steps": 40,
+      "gripper_sign_changes": 1
+    },
+    {
+      "init_state_id": 49,
+      "seed": 1091,
+      "success": false,
+      "steps": 280,
+      "gripper_positive_steps": 48,
+      "gripper_sign_changes": 2
+    }
+  ],
+  "overall": {
+    "successes": 42,
+    "n_episodes": 50,
+    "pc_success": 84.0,
+    "eval_s": 926.2880256520002
+  }
+}
