@@ -59,9 +59,22 @@ outputs/train/dp_task34_grasp_20261126/step_004000/pretrained_model
 python3 libero-dp/scripts/verify_results.py
 ```
 
-## 演示状态
+## 演示
 
-最终84%模型的正式确认没有录制视频。本目录暂不展示GIF，历史旧模型的视频不能冒充最终模型成果；后续录制应固定最终权重与配置，并注明是补录演示，不属于原50回合录像。
+以下是最终4k EMA模型的补录案例，使用与正式确认相同的状态ID和环境种子。**这两回合单独保存，不追加到原来的42/50统计。**
+
+| 成功：状态0，seed=1042 | 失败：状态3，seed=1045 |
+|---|---|
+| ![最终DP模型成功抓放](media/state_000_seed_1042_success.gif) | ![最终DP模型未完成抓放](media/state_003_seed_1045_failure.gif) |
+| [打开或下载MP4](https://raw.githubusercontent.com/Zerry-code/act-pusht-reproduction/main/libero-dp/media/state_000_seed_1042_success.mp4) | [打开或下载MP4](https://raw.githubusercontent.com/Zerry-code/act-pusht-reproduction/main/libero-dp/media/state_003_seed_1045_failure.mp4) |
+
+环境记录分别为成功71步、失败280步；包含初始画面后分别72帧/7.2秒与281帧/28.1秒。MP4和GIF均完整保留这些帧，以10FPS播放；播放时长不等于推理实际耗时。视频没有音轨。
+
+成败依据环境成功标记，不能只凭观感判断；失败案例可见盘子被碰动、任务未完成，不能仅凭外部画面确定唯一原因。两段补录均采用主相机展示，策略推理仍使用两路相机。
+
+[补录记录与权重SHA256](results/demo_info.json) · [媒体校验清单](results/demo_media_manifest.json) · [录制脚本](scripts/record_dp_libero_demo.py)
+
+`demo_info.json`保留原机输出路径，仓库内的视频与GIF按相同文件名存放在`media/`。原50回合正式确认没有录制录像；本节展示的是后续补录，不能称为原评测录像。
 
 ## 工作来源
 

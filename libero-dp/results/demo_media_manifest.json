@@ -1,0 +1,46 @@
+{
+  "source": "uploaded supplemental MP4 files and demo_info.json",
+  "model_sha256_source": "reported by the local recorder; model weights not uploaded",
+  "media": [
+    {
+      "repository_path": "media/state_000_seed_1042_success.mp4",
+      "sha256": "0b68d70a8f5ac228be709dc7dce16d4bbd2cc1f357381f9bd4b872a199e4ef58",
+      "frames": 72,
+      "fps": 10,
+      "duration_s": 7.2,
+      "width": 256,
+      "height": 256,
+      "audio": false
+    },
+    {
+      "repository_path": "media/state_000_seed_1042_success.gif",
+      "sha256": "df9bba22aa7626a9ab33db1b4cd857ad4e19c008e61aa6c4377368c81e355fa0",
+      "frames": 72,
+      "fps": 10,
+      "duration_s": 7.2,
+      "width": 384,
+      "height": 384,
+      "audio": false
+    },
+    {
+      "repository_path": "media/state_003_seed_1045_failure.mp4",
+      "sha256": "6c740f58699bd0ddb6849db071d44370a7ae08eafbe5e3c520b11b14084e6a59",
+      "frames": 281,
+      "fps": 10,
+      "duration_s": 28.1,
+      "width": 256,
+      "height": 256,
+      "audio": false
+    },
+    {
+      "repository_path": "media/state_003_seed_1045_failure.gif",
+      "sha256": "8bba218b350a79be5afd7607b8eabac19aaa3318cb4df913c645c829818d77fe",
+      "frames": 281,
+      "fps": 10,
+      "duration_s": 28.1,
+      "width": 384,
+      "height": 384,
+      "audio": false
+    }
+  ]
+}
